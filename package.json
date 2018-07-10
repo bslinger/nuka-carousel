@@ -9,8 +9,7 @@
     "d3-ease": "^1.0.3",
     "exenv": "^1.2.0",
     "prop-types": "^15.6.0",
-    "react-move": "^2.7.0",
-    "builder": "^4.0.0"
+    "react-move": "^2.7.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.42",
@@ -23,6 +22,7 @@
     "babel-eslint": "^8.2.2",
     "babel-jest": "^22.4.1",
     "babel-loader": "8.0.0-beta.2",
+    "builder": "^4.0.0",
     "chai": "^3.3.0",
     "css-loader": "^0.28.10",
     "del": "^2.0.2",
