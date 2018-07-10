@@ -226,7 +226,8 @@ export default class Carousel extends React.Component {
             ? this.getTargetLeft(
                 this.touchObject.length * this.touchObject.direction
               )
-            : 0
+            : 0,
+            swipeStarted: length > this.props.swipeDeadZone
         });
       },
       onTouchEnd: e => {
@@ -395,7 +396,8 @@ export default class Carousel extends React.Component {
     this.touchObject = {};
 
     this.setState({
-      dragging: false
+      dragging: false,
+      swipeStarted: false
     });
   }
 
@@ -1174,6 +1176,7 @@ Carousel.propTypes = {
   slideWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   speed: PropTypes.number,
   swiping: PropTypes.bool,
+  swipeDeadZone: PropTypes.number,
   vertical: PropTypes.bool,
   width: PropTypes.string,
   wrapAround: PropTypes.bool
@@ -1203,6 +1206,7 @@ Carousel.defaultProps = {
   slideWidth: 1,
   speed: 500,
   swiping: true,
+  swipeDeadZone: 50,
   vertical: false,
   width: '100%',
   wrapAround: false
