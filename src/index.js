@@ -57,6 +57,7 @@ export default class Carousel extends React.Component {
       slideCount: 0,
       slidesToScroll: this.props.slidesToScroll,
       slideWidth: 0,
+      swipeStarted: false,
       top: 0,
       easing: easing.easeCircleOut,
       isWrappingAround: false,
